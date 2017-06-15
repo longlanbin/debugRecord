@@ -1,0 +1,9 @@
+Nodal degrees of freedom without element 
+             connection have been fixed for ADINA input data. 
+             There may still be degrees of freedom without 
+             stiffness - see documentation. 
+总是会出现Stiffness matrix not positive definite,boundary conditions or model collapsed，然后也会No element connection for node 50 directions 1, 4, 5, 6
+             Message limit reached - above message has been suppressed 811 times.
+             Nodal degrees of freedom without element
+             connection have been fixed for data input file.
+             There may still be degrees of freedom without

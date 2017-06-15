@@ -1,0 +1,30 @@
+1.在vim中不能打冒号，尖括号等，不知道该怎么解决
+我选择了系统－>首选项->键盘——>布局
+在这里，我的布局不知道怎么回事，变成了罗马尼亚romania，乖乖，我赶紧就换了，之后再把键盘型号改了一下。在系统设置中点keyboard layout 选english
+
+2.解决ubuntu中vi不能正常使用方向键与退格键的问题
+问题分析：ubuntu预装的是vim tiny版本，而需要的是vim full版本。执行下面的语句安装vim full版本：
+
+$sudo apt-get remove vim-common
+
+$sudo apt-get install vim
+
+ps:这里可能遇到以下问题：
+
+Reading package lists... Done
+
+Building dependency tree     
+
+Reading state information... Done
+
+Package vim is not available, but is referred to by another package.
+
+This may mean that the package is missing, has been obsoleted, or
+
+is only available from another source
+
+E: Package vim has no installation candidate
+
+解决办法：
+
+sudo apt-get update && sudo apt-get install vim
