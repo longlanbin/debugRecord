@@ -1,0 +1,6 @@
+echo "# 201701" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add xxxx git@github.com:longlanbin/201701.git
+git push -f xxxx <branch>
