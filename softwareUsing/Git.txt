@@ -1,0 +1,14 @@
+echo "# 201701" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add xxxx git@github.com:longlanbin/201701.git
+git push -f xxxx <branch>
+
+STEP 1: git stash       your local uncommitted changes on that branch.
+
+STEP 2: git pull origin branch_name -v    to pull and merge to locally committed changes on that branch (give this merge some message, and fix conflicts if any.)
+
+STEP 3: git stash pop        the stashed changes (Then you can make commits on popped files if you want or push already committed changes (STEP4) first and make new commit to files later.)
+
+STEP 4: git push origin branch_name -v      the merged changes.
